@@ -17,7 +17,8 @@ describe "Viewing the list of events" do
     event3 = Event.create(name: "Kata Camp",
                           location: "Dallas",
                           price: 75.00,
-                          description: 'Practice your craft kata style!')
+                          description: 'Practice your craft kata style!',
+                          starts_at: 2.days.ago)
 
     visit events_url
 
